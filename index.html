@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+*{box-sizing:border-box}
+body{margin:0;font-family:Arial,Helvetica,sans-serif;background:transparent;color:#fff}
+.footer{background:#171717;color:#fff;padding:34px clamp(20px,5vw,54px) 20px;border-radius:0}
+.top{display:flex;justify-content:space-between;align-items:flex-start;gap:30px;flex-wrap:wrap}
+.brand{font-size:32px;font-weight:900;letter-spacing:-2px;margin:0 0 9px}
+.brand span{color:#d8ff3e}
+.tagline{margin:0;color:#c7c7c7;font-size:14px;line-height:1.6}
+.contact{min-width:220px}
+.contact h2{font-size:14px;text-transform:uppercase;letter-spacing:1.5px;margin:3px 0 16px}
+.contact a{display:flex;align-items:center;gap:10px;text-decoration:none;color:#f5f5f5;margin:12px 0;font-size:14px;overflow-wrap:anywhere}
+.icon{display:inline-flex;align-items:center;justify-content:center;width:30px;height:30px;flex:0 0 30px;border-radius:50%;background:#2a2a2a;color:#d8ff3e}
+.rule{height:1px;background:#3a3a3a;margin:26px 0 17px}
+.bottom{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;color:#aaa;font-size:12px;line-height:1.6}
+.bottom p{margin:0}
+@media(max-width:500px){.footer{padding:28px 20px 18px}.top{gap:24px}.brand{font-size:29px}.contact{width:100%}.bottom{flex-direction:column}}
+</style>
+</head>
+<body>
+<footer class="footer">
+  <div class="top">
+    <div>
+      <h1 class="brand">STEP<span>UP</span>.</h1>
+      <p class="tagline">Find your next step.<br>Temukan sepatu yang cocok untuk setiap langkahmu.</p>
+    </div>
+    <div class="contact">
+      <h2>Kontak &amp; Bantuan</h2>
+      <a href="https://wa.me/6281234567890" target="_blank" rel="noopener">
+        <span class="icon" aria-hidden="true">✆</span>
+        <span>WhatsApp: 08xxxxxxxxxx</span>
+      </a>
+      <a href="mailto:emailtokolu@example.com">
+        <span class="icon" aria-hidden="true">✉</span>
+        <span>emailtokolu@example.com</span>
+      </a>
+    </div>
+  </div>
+  <div class="rule"></div>
+  <div class="bottom">
+    <p>© <span id="year"></span> STEPUP. All rights reserved.</p>
+    <p>Made for your everyday steps.</p>
+  </div>
+</footer>
+<script>document.getElementById("year").textContent=new Date().getFullYear();</script>
+</body>
+</html>
